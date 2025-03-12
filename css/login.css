@@ -1,0 +1,87 @@
+body {
+    background: #F1F8FF;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    background: white;
+}
+
+.error-message {
+    color: red;
+    display: none;
+    margin-bottom: 15px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    font-weight: bold;
+    color: #3cb815;
+    font-size: 2.5rem;
+}
+
+.logo span {
+    color: #3cb815;
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #3cb815;
+    box-shadow: 0 0 0 0.2rem rgba(51, 255, 0, 0.25);
+}
+
+.btn-primary {
+    background: #3cb815;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background: #2be600;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.form-label {
+    color: #0F172B;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #0F172B;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.switch-link {
+    color: #3cb815;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.switch-link:hover {
+    color: #2be600;
+    text-decoration: underline;
+} 
