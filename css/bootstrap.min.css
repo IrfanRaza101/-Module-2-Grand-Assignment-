@@ -7533,6 +7533,13 @@ fieldset:disabled .btn {
   .float-md-start {
     float: left !important;
   }
+  .cart-button,
+  .wishlist-button {
+      display: block !important; /* Ensure both buttons are visible */
+      width: 100% !important; /* Make them full width for better visibility */
+      margin-bottom: 10px!important; /* Add some space between buttons */
+  }
+
   .float-md-end {
     float: right !important;
   }

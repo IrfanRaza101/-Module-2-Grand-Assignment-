@@ -29,6 +29,63 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Navbar Fixes */
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        /* Add padding to body to prevent content from hiding behind navbar */
+        body {
+            padding-top: 80px;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            padding: 8px 15px !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--secondary) !important;
+        }
+
+        .nav-link.active {
+            color: var(--secondary) !important;
+            font-weight: 600;
+        }
+
+        /* Adjust container padding for better spacing */
+        .container-xxl {
+            padding-top: 30px;
+        }
+
+        /* Make sure spinner stays on top */
+        #spinner {
+            z-index: 1001;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,24 +96,24 @@
     <!-- Spinner End -->
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
                 <h1 class="fw-bold text-primary m-0">F<span class="text-secondary">oo</span>dy</h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="navbar-nav ms-auto">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="product.html" class="nav-item nav-link">Products</a>
                     <a href="admin.html" class="nav-item nav-link active">Admin Panel</a>
                     <a href="javascript:void(0);" class="nav-item nav-link" onclick="logout()">Logout</a>
                 </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Admin Panel Start -->

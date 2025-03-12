@@ -201,19 +201,43 @@ document.getElementById('completeOrderBtn').addEventListener('click', function(e
             
             // Clear cart and show success message
             localStorage.removeItem('cartItems');
-            showToast('Success', 'Order placed successfully!', 'success');
             
-            // Redirect after delay
+            // Create and show enhanced alert
+            const alertOverlay = document.createElement('div');
+            alertOverlay.className = 'alert-overlay';
+            alertOverlay.innerHTML = `
+                <div class="alert-container">
+                    <div class="alert-content">
+                        <div class="alert-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4 class="alert-heading">Order Placed Successfully!</h4>
+                        <p class="alert-message">Thank you for your purchase.</p>
+                        <div class="alert-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                        <p class="alert-redirect">Redirecting to home page...</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(alertOverlay);
+            
+            // Remove alert and redirect after delay
             setTimeout(() => {
-                window.location.href = 'index.html';
+                alertOverlay.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    alertOverlay.remove();
+                    window.location.href = 'index.html';
+                }, 300);
             }, 2000);
-        }, 3000);
+        }, 1500);
     }
 });
 
 // Loading Overlay
 function showLoading() {
-    document.querySelector('.loading-overlay').classList.add('active');
+    const loadingOverlay = document.querySelector('.loading-overlay');
+    loadingOverlay.classList.add('active');
 }
 
 function hideLoading() {
@@ -248,5 +272,4 @@ function showToast(title, message, type = 'success') {
 document.addEventListener('DOMContentLoaded', function() {
     showStep(1);
     updateCartItems();
-    updateOrderSummary();
 });

@@ -74,7 +74,7 @@ function displayCart() {
 
 // Function to update cart summary
 function updateCartSummary(subtotal) {
-    const shipping = subtotal > 50 ? 0 : 5;
+    const shipping = 20; // Fixed shipping fee of $20
     const total = subtotal + shipping;
 
     const elements = {
