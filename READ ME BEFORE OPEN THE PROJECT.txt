@@ -3,3 +3,39 @@ Login in admin panal please use this email and password:
 Email: irfanraz67@gmail.com
 
 Password: 123456
+
+
+Login System:
+✅ Users k liye login system implement hai
+✅ Admin k liye separate login hai (email: irfanraz67@gmail.com)
+✅ Login k baghair koi bhi page access nahi kar sakta
+✅ Signup functionality bhi available hai
+
+Cart System:
+✅ Products ko cart mein add kar sakte hain
+✅ Cart se products remove kar sakte hain
+✅ Quantity update kar sakte hain
+✅ Cart summary with subtotal, shipping aur total amount show hota hai
+
+Favorite Products:
+✅ Products ko wishlist mein save kar sakte hain
+✅ Wishlist se products ko cart mein move kar sakte hain
+✅ Wishlist se products remove kar sakte hain
+
+Checkout/Payment:
+✅ Checkout page available hai
+✅ Multiple payment options hain:
+Credit Card
+PayPal
+Cash on Delivery
+✅ Shipping details collection
+✅ Order summary with all details
+✅ Secure order placement
+
+Additional Features:
+✅ Responsive design
+✅ User-friendly interface
+✅ Toast notifications for actions
+✅ Admin panel for product management
+✅ Cart count updates
+✅ Wishlist count updates
